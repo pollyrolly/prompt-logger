@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
@@ -9,6 +9,23 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.tsx</code>
         </p>
+        <div>
+          <a
+            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            By{" "}
+            <Image
+              src="/vercel.svg"
+              alt="Vercel Logo"
+              className={styles.vercelLogo}
+              width={100}
+              height={24}
+              priority
+            />
+          </a>
+        </div>
       </div>
 
       <div className={styles.center}>
@@ -20,19 +37,11 @@ export default function Home() {
           height={37}
           priority
         />
-        <span>+</span>
-        <Image
-          src="/amplify.svg"
-          alt="Amplify Logo"
-          width={45}
-          height={37}
-          priority
-        />
       </div>
 
       <div className={styles.grid}>
         <a
-          href="https://docs.amplify.aws/gen2/"
+          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
@@ -40,47 +49,47 @@ export default function Home() {
           <h2>
             Docs <span>-&gt;</span>
           </h2>
-          <p>Review documentation for Amplify's code-first DX (Gen 2).</p>
+          <p>Find in-depth information about Next.js features and API.</p>
         </a>
 
         <a
-          href="https://docs.amplify.aws/gen2/start/quickstart/"
+          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
-            Quickstart <span>-&gt;</span>
+            Learn <span>-&gt;</span>
           </h2>
-          <p>Follow a tutorial to build a fullstack app with Amplify Gen 2.</p>
+          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
         </a>
 
         <a
-          href="https://docs.amplify.aws/gen2/build-a-backend/auth/set-up-auth/"
+          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
-            Auth <span>-&gt;</span>
+            Templates <span>-&gt;</span>
           </h2>
-          <p>Zero-config Auth UI components with social sign-in and MFA.</p>
+          <p>Explore starter templates for Next.js.</p>
         </a>
 
         <a
-          href="https://docs.amplify.aws/gen2/build-a-backend/data/set-up-data/"
+          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
-            Data <span>-&gt;</span>
+            Deploy <span>-&gt;</span>
           </h2>
           <p>
-            Fully-typed real-time API with NoSQL database.
+            Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
       </div>
     </main>
-  )
+  );
 }
